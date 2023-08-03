@@ -1,0 +1,26 @@
+augmenter_config:
+  normalize_threshold_by_data_size: True
+  weight_threshold: 0.01
+  weight_threshold_type: total
+  weight_kernel_cfg:
+    type: vanilla_kernel
+    conti_kertype: gaussian
+    conti_bw_method: normal_reference
+    conti_bw_temperature: 1
+    ordered_kertype: indicator
+    ordered_bw_method: indicator
+    unordered_kertype: indicator
+    unordered_bw_method: indicator
+    const_bandwidth: False
+    bandwidth_temperature: 0.001
+
+dag_config:
+  vertices:
+    - V1
+    - V2
+    - V3
+  di_edges:
+    - [V1, V2]
+    - [V1, V3]
+  bi_edges: []
+  predicted_var_name: V3
