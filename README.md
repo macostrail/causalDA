@@ -5,4 +5,4 @@ caudal augmentation script
 ```bash setup.sh```
 
 # How to use
-```python --config config.yaml --table sample.csv```
+```python run.py --config config.yaml --table sample.csv```
