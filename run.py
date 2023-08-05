@@ -153,12 +153,11 @@ def main(df: pd.DataFrame, graph, augment_config):
                                      augmenter_config_ok, 
                                      data_cache_base_path, 
                                      data_cache_name)
-
     aug_data_to_print = aug_data.copy()
     aug_data_to_print['weight'] = aug_weights*data.shape[0]
     print(aug_data_to_print)
     print(aug_data_to_print['weight'].sum()) 
-    return aug_data, dag_image
+    return aug_data_to_print, dag_image
 
 
 if __name__ == '__main__':
@@ -181,4 +180,4 @@ if __name__ == '__main__':
 
     aug_data, dag_image = main(data, (vertices, di_edges, bi_edges), augmenter_config)
     aug_data.to_csv(result_dir / f'augmented_{args.table}', index=None)
-    dag_image.render(result_dir / 'DAG')
+    dag_image.render(result_dir / f'ADMG_{args.table}')
