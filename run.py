@@ -170,11 +170,11 @@ if __name__ == '__main__':
     with open(args.config) as file:
         config = yaml.safe_load(file)
     augmenter_config = config['augmenter_config']
-    dag_config = config['dag_config']
-    vertices = dag_config['vertices']
-    di_edges = dag_config['di_edges']
-    bi_edges = dag_config['bi_edges']
-    predicted_var_name = dag_config['predicted_var_name']
+    admg_config = config['admg_config']
+    vertices = admg_config['vertices']
+    di_edges = admg_config['di_edges']
+    bi_edges = admg_config['bi_edges']
+    predicted_var_name = admg_config['predicted_var_name']
 
     data = pd.read_csv(args.table)  
 

@@ -14,7 +14,7 @@ augmenter_config:
     const_bandwidth: False
     bandwidth_temperature: 0.001
 
-dag_config:
+admg_config:
   vertices:
     - V1
     - V2

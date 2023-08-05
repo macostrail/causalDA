@@ -2,6 +2,6 @@ digraph {
 	V1 [height=.5 shape=plaintext width=.5]
 	V2 [height=.5 shape=plaintext width=.5]
 	V3 [height=.5 shape=plaintext width=.5]
-	V1 -> V2 [color=blue]
 	V1 -> V3 [color=blue]
+	V1 -> V2 [color=blue]
 }
