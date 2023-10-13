@@ -1,5 +1,6 @@
-# causalDAhttps://github.com/macostrail/causalDA/tree/master
-caudal augmentation script
+# causal data augmentation
+This code is just a modification of the original code.
+Original script is here : https://github.com/audreypoinsot/admg_data_augmentation
 
 # Set up
 ```bash setup.sh```
